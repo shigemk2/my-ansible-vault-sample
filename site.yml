@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  gather_facts: no
+  vars_files:
+    - private.yml
+  tasks:
+    - debug: msg="password = {{ password }}"
