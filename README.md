@@ -7,4 +7,6 @@ ansible-vault encrypt private.yml
 ansible-vault decrypt private.yml
 # パスワード変更
 ansible-vault rekey private.yml
+# 実行
+ansible-playbook -i hosts site.yml --ask-vault-pass
 ```
